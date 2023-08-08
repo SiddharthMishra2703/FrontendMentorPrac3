@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+    display: flex;
+    height: 97vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(235, 18%, 26%);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.for-mobile{
+    display: none;
+}
+
+.container{
+    display: flex;
+    width: 50rem;
+    padding: 10px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.part1{
+    padding: 40px;
+}
+.part1 h1{
+    font-size: 3.5rem;
+    color: hsl(234, 29%, 20%);
+    margin: 15px 0;
+}
+.part1 ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.align-straight{
+    display: flex;
+    padding: 5px 0;
+}
+
+.align-straight img{
+    margin-right: 15px;
+}
+
+.email-form input,button{
+    width: 95%;
+    padding: 0;
+    box-sizing: border-box;
+    height: 2.8rem;
+    margin: 10px 0;
+    border-radius: 7px;
+    /* border-color: lightgray; */
+}
+
+.error{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.error span{
+    color: red;
+}
+
+.err-color{
+    background-color: rgba(251, 126, 126, 0.473);
+    border-style: solid;
+    border-color: red;
+}
+
+.err-color::placeholder {
+    color: red;
+}
+
+.hide{
+    display: none;
+}
+
+.email-form button{
+    background-color: hsl(234, 29%, 20%);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.email-form{
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.part2 img{
+    height: 450px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 420px) {
+    body{
+        display: block;
+        margin: 0;
+        height: auto;
+    }
+    .container{
+        padding: 0;
+        display: block;
+        width: auto;
+        border-radius: 0;
+        height: 100%;
+    }
+    .part1 h1{
+        font-size: 2.8rem;
+    }
+    .for-mobile{
+        width: 100%;
+        display: block;
+    }
+    .for-desktop{
+        display: none;
+    }
+}
+
+@media screen and (min-height: 840px) {
+    body{
+        display: flex;
+        height: 100vh;
+    }
+}
+
+.container2{
+    width: 30%;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 15px;
+}
+
+.container2 h1{
+    font-size: 2.8rem;
+}
+
+.container2 button{
+    background-image: linear-gradient(to right, hsl(4, 100%, 67%) , rgb(247, 91, 7));
+    font-size: 1rem;
+    color: white;
+}
+
+@media screen and (max-width: 420px) {
+    .container2{
+        width: auto;
+        border-radius: 0;
+        height: 100vh;
+        padding: 3rem;
+        box-sizing: border-box;
+        padding-top: 50%;
+    }
+
+    .container2 button{
+        position: absolute;
+        width: 280px;
+        bottom: 20px;
+        background-color: hsl(234, 29%, 20%);
+    }
+}
+
+button:hover{
+    cursor: pointer;
+}
